@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Master</title>
+    <link rel="icon" href="/typemasterlogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/game.css" />
+  </head>
+  <body style="font-family: arial">
+    <header id="header">
+      <div class="casper">
+        <img class="logo" src="/typemasterlogo.png" alt="" />
+        <h1>Type master</h1>
+      </div>
+      <button class="drop" id="choose">Choose Difficulty</button>
+      <div id="diff" class="diff">
+        <button class="buttons" value="10">Beginner</button>
+        <button class="buttons" value="5">Professional</button>
+        <button class="buttons" value="3">God Level</button>
+      </div>
+    </header>
+
+    <p class="warn">
+      you have <span id="time">____</span> seconds to type each word
+    </p>
+    <h2 id="wordsOutput"></h2>
+
+    <input type="text" id="input" placeholder="Start typing ..." />
+
+    <div id="message">start Game</div>
+
+    <div class="timeScore">
+      <p>Time Remaining: <span id="timer">5</span> seconds</p>
+      <p>score: <span id="score"> 0 </span> point(s)</p>
+    </div>
+
+    <div id="cap">
+      <div id="instruc">
+        About/Instructions: This game is built to test you speed at typing at
+        three different difficulty levels that you choose from. The game begins
+        immediately after you have typed in the first word. Please ensure to set
+        the game difficulty wait for the timer to run out before you begin the
+        game. If the timer runs out you lose the game ends the score is reset to
+        zero HAPPY TYPING... &#128523;
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
